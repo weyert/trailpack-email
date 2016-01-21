@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- '4'
+- stable
+notifications:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/54f8a1e753f859f5ca1a
+    on_start: never
+    on_failure: change
+deploy:
+  provider: npm
+  email: jimmy.aumard@gmail.com
+  api_key:
+    secure: a5NNzylGtIRbgAycRlCcXAzul7N+y1QumsF4IRTHxgdjYMFpKWUfRzhtxgvnCa1Ap9de58EriMjWdA1n1bWVqoS+J6Tv1Uk6xK+MKuwxs83PWi0Zmsl4NdxuWe1HgaejAxcr+6BpEoWfD8YQdG22HbN3a4aeQMELtPFvqZLh43sfgyfmX8VWHbaMtmPcw7J5qlE13C85dBysNitzJEHnMQ68G/K1Onu68UacIYcI07kuHiHKF2M2oQkjNB8ew2P4vwoGii+ZixiHuKHCWSTGKSmlOTIgKpRNlK8eEETePQALK8EV05Vish2kh4Qz2AgbnnMrfWD1FVPenPR+sk9TC2eYYQniGoZom7Bd6u5fAIn8VWIpwX0IqOW27ULdwyUUkCNuUOiiWHKS6okAiK0BZvgllNMsnERyPfUnFNA/QO/DusR/MWD552QiFbk/UBZQqt4iKPhLeiXG3Z1d98/oHvUsNIfLXSvMJOL9e5Z/W7lzuN1aT5UzdYNKro3V/G51IGpZ+547UVIaQhcDzZc3TZ72gITqcrtwapMNDiJ2WjnMD1aiuOVCV9BJEejPh/T3PQ9NfKn1If+T1cBpIiQfZ30AqQ31rSYk7d+gK5sekOYigFESehHRTKz7jYj+5ijXPqQE6WB9uuj/UPPsViYrI+W0KHB5M6xe/FT/ZCeEFbI=
+  on:
+    tags: true
+    repo: jaumard/trailpack-email
+    all_branches: true
+    node: stable

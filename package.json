@@ -1,0 +1,49 @@
+{
+  "name": "trailpack-email",
+  "version": "0.0.1",
+  "description": "Add a Trails service to sending emails",
+  "homepage": "https://github.com/jaumard/trailpack-email",
+  "author": {
+    "name": "Jimmy Aumard",
+    "email": "jimmy.aumard@gmail.com",
+    "url": "https://github.com/jaumard"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "trailpack",
+    "trails",
+    "trailjs"
+  ],
+  "dependencies": {
+    "lodash": "^4.0.0",
+    "nodemailer": "^2.0.0",
+    "trailpack": "^0.0.21",
+    "trails-service": "^1.0.0-alpha-1"
+  },
+  "devDependencies": {
+    "eslint": "^2.0.0-beta.1",
+    "eslint-config-trails": "^1.0.1",
+    "machinepack-json": "^1.2.1",
+    "mocha": "^2.3.4",
+    "smokesignals": "^1.0.2",
+    "trailpack-core": "^1.0.0-alpha-3",
+    "trails": "^1.0.0-alpha-4"
+  },
+  "bundledDependencies": [
+    "trailpack"
+  ],
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "https://github.com/jaumard/trailpack-email",
+  "license": "MIT"
+}
