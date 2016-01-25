@@ -22,7 +22,7 @@
     "nodemailer"
   ],
   "dependencies": {
-    "lodash": "^4.0.0",
+    "lodash": "^4.0.1",
     "nodemailer": "^2.0.0",
     "trailpack": "^0.0.21",
     "trails-service": "^1.0.0-alpha-1"
