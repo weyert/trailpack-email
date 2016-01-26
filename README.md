@@ -1,6 +1,7 @@
 # trailpack-email
 [![Gitter][gitter-image]][gitter-url]
 [![NPM version][npm-image]][npm-url]
+[![NPM downloads][npm-download]][npm-url]
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
@@ -68,6 +69,7 @@ this.app.services.EmailService.send({
 
 [npm-image]: https://img.shields.io/npm/v/trailpack-email.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/trailpack-email
+[npm-download]: https://img.shields.io/npm/dt/trailpack-email.svg
 [ci-image]: https://travis-ci.org/jaumard/trailpack-email.svg?branch=master
 [ci-url]: https://travis-ci.org/jaumard/trailpack-email
 [daviddm-image]: http://img.shields.io/david/jaumard/trailpack-email.svg?style=flat-square
