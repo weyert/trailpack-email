@@ -1,6 +1,6 @@
 {
   "name": "trailpack-email",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Add a Trails service to sending emails",
   "homepage": "https://github.com/jaumard/trailpack-email",
   "author": {
