@@ -25,13 +25,13 @@
     "nodemailer"
   ],
   "dependencies": {
-    "lodash": "^4.0.1",
-    "nodemailer": "^2.0.0",
+    "lodash": "^4.1.0",
+    "nodemailer": "^2.1.0",
     "trailpack": "^1.0.0-alpha-2",
     "trails-service": "^1.0.0-alpha-1"
   },
   "devDependencies": {
-    "eslint": "^2.0.0-beta.1",
+    "eslint": "2.0.0-beta.2",
     "eslint-config-trails": "^1.0.1",
     "machinepack-json": "^1.2.1",
     "mocha": "^2.3.4",
