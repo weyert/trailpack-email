@@ -62,6 +62,16 @@ this.app.services.EmailService.send({
     }, (err, info) => {
 
     })
+//Or with Promise
+this.app.services.EmailService.send({
+      to: 'user@gmail.com',
+      subject: 'Test',
+      text: 'test',
+      html: '<p>test</p>'
+    }).then(info => {
+
+    }).catch(err => this.log.error(err))
+    
 ```
 
 ## License

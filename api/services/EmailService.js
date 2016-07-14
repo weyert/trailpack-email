@@ -14,6 +14,18 @@ module.exports = class EmailService extends Service {
 
     data = _.defaultsDeep(data, config.defaultData)
 
-    transporter.sendMail(data, next)
+    if (next == null) {
+      return new Promise((resolve, reject) => {
+        transporter.sendMail(data, (err, infos) => {
+          if (err) {
+            return reject(err)
+          }
+          return resolve(infos)
+        })
+      })
+    }
+    else {
+      transporter.sendMail(data, next)
+    }
   }
 }
