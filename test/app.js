@@ -3,7 +3,7 @@ const smokesignals = require('smokesignals')
 
 const App = {
   pkg: {
-    name: 'machinepack-trailpack-test',
+    name: 'email-trailpack-test',
     version: '1.0.0'
   },
   api: {},
