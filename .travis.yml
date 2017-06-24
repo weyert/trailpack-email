@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-- '4'
-- stable
+- '6'
+- '7'
+- '8'
 notifications:
   email: false
   webhooks:
@@ -18,4 +19,4 @@ deploy:
     tags: true
     repo: jaumard/trailpack-email
     all_branches: true
-    node: stable
+    node: 7
