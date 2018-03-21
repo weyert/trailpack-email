@@ -19,12 +19,18 @@ module.exports = class Email extends Trailpack {
   /**
    * Configure nodemailer transporter
    */
-  configure() {
+  initialize() {
     const config = this.app.config.email
-    if (!config.customTransporter) {
-      config.customTransporter = nodemailer.createTransport(config.smtp)
+    let result = Promise.resolve()
+    if (config.customTransporter) {
+      result = config.customTransporter(this.app).then(transporter => {
+        this.transporter = transporter
+      })
     }
-    return Promise.resolve()
+    else {
+      this.transporter = nodemailer.createTransport(config.smtp)
+    }
+    return result
   }
 
   constructor(app) {

@@ -1,8 +1,7 @@
 language: node_js
 node_js:
-- '6'
-- '7'
 - '8'
+- '9'
 notifications:
   email: false
   webhooks:
@@ -14,9 +13,9 @@ deploy:
   provider: npm
   email: jimmy.aumard@gmail.com
   api_key:
-    secure: XpVElUpyXf9ID5mNZMNLz52eB63OJQDcmt8RlvRiZKws65ZQPyObHa5sQz093zFi8Oi4CTcuvft0JlwINdDz5jUm3mB2OgWYWomdONIa6xHwj40H5PDy82kmwToK+MA4aXP2L4H5eTRXF3MFccN1x0/96noSlwvaAEBnH/IXU0T6tQa8aKfy21Cl43sEbjm4kNTm+yIGGHbbokWyQ+VtMy8IHX1v07bcfD3ynPGgH8tbys+4BPM7hBn2V8ZOtjmDrI9GV4r6+y7xWdPnY45CGN9gGIrZ2z2H88roR2FFrbkzEM9Ik/8YbkKYfCgdHd34O8CvfglWZQcH0DHNQR+n2yiQH+aNEXn79cizb+RfuhIfRXr5oostyziypYDLi45HHUkWlLNaS4sRWFeZNVE9kiTPSVmgMVq+zrM3840W7Lnv7XSW6S0SbUm7krbeVFGTRiBnz8akh3tp9oduhbaaShOdKJ4lBtms1tzFXLKLi1+vNKVUTso25jFKgDvwkVwgUpFstfmlpOE5oNoI35YYI8A4Jii0NnLmr2Pz5SyljWcAxkVazrw+IGfwgykGrt7W4b2GZpqw4qpAN3xC6+XcN+uPJz4G+I5zbrkEt3olA6nbHwv8tJZzn18xy/gIpdAo6sL7JH4kILsmd2i2OkWOQEMCgT6MAezYFGoofKhOTTQ=
+    secure: bB9KABPqghWfFqdCwefFFRsf3NanGt3E5RjgWJu5mf4a1pg3bIYYBiSNOxpnyn6SUiTKDBb1uWKB3R78g9v1ps3y1uDo/LbY8Wc8BIil1rxoTZFinvtPuSzU83seJDdIK2bM8S/Ykl85bgt7WMIOQU6/OAY/G7CXjhUTe4OnePB8I0MaKdAzOxVclFsG8GYNSPBCatAd7gSZlPxCZpyDkLgss5Rlpf2W0VMqWt4XrQpj/BlHjk7KNEcsdPRu7K0xQX7lrbLuJiiRS0c/4HnFuNwiABssyBsL+ZnPm6I55L2y6nIvq614I6PDPV056eFzHZNv3936AgzXaZ6aklQbBwBxK7NWuO3y4fGYLGKg6gqKaLohT8PaKdL5jFEOnacWGHYj/HR85xVlmUcgkqV0LloPEahx6OaU/lkdImYVM1GVYw6XkWB5c6BG3lxRIevraJ01KfcporyW2csiQOMVzrn4+0aFxbPUGcFPE8+qUXvUo0Cbb6Q9pKVtJXIQXo5VrUz+/hHadDftnYyHTt9a6ycCN2NHzFG7UAvZfAtjjb9tFYmWBZPuSTbNCWbqKzhuHSr2fFOs42O2/l/gBgkJRc/JMnKzEUo9+OpCj5MXPtF2qwRMT69du2Ri5iFbaVTKE2WS1UPJZg9Myun8OiE52fO2WlzyqEk/B0Kb1v4l8G0=
   on:
     tags: true
     repo: jaumard/trailpack-email
     all_branches: true
-    node: 7
+    node: 8

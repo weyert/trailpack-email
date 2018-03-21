@@ -8,18 +8,18 @@
  */
 module.exports = {
   //Custom transporter object to send email
-  customTransporter: null,
+  //customTransporter: (app) => Promise.resolve(),
 
   /*
    * SMTP Configuration
    * @see {@link https://github.com/jaumard/trailpack-email}
    */
   smtp: {
-    host: 'smtp.gmail.com',
+    host: 'smtp.domain.com',
     port: 465,
     secure: true, // use SSL
     auth: {
-      user: 'user@gmail.com',
+      user: 'user@domain.com',
       pass: 'pass'
     }
   },
@@ -28,6 +28,6 @@ module.exports = {
    * from, to, css, bcc, subject, text, html, attachments
    */
   defaultData: {
-    from: 'noreply@gmail.com'
+    from: 'noreply@domain.com'
   }
 }

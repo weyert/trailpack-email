@@ -1,6 +1,6 @@
 'use strict'
 
-const Service = require('trails/service')
+const Service = require('trails/lib/Service')
 const _ = require('lodash')
 
 /**
@@ -10,7 +10,7 @@ const _ = require('lodash')
 module.exports = class EmailService extends Service {
   send(data, next) {
     const config = this.app.config.email
-    const transporter = config.customTransporter
+    const transporter = this.app.packs.email.transporter
 
     data = _.defaultsDeep(data, config.defaultData)
 
