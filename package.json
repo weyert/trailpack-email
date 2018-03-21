@@ -1,6 +1,6 @@
 {
   "name": "trailpack-email",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Add a Trails service to sending emails",
   "homepage": "https://github.com/jaumard/trailpack-email",
   "author": {
@@ -25,16 +25,16 @@
     "nodemailer"
   ],
   "dependencies": {
-    "lodash": "^4.17.4",
-    "nodemailer": "^4.0.1",
-    "trailpack": "^2.1.2"
+    "lodash": "^4.17.5",
+    "nodemailer": "^4.6.3",
+    "trailpack": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.1.0",
-    "eslint-config-trails": "^3.0.0",
-    "mocha": "^3.4.2",
-    "smokesignals": "^3.0.3",
-    "trails": "^2.0.2"
+    "eslint": "^4.19.0",
+    "eslint-config-trails": "^3.1.0",
+    "mocha": "^5.0.4",
+    "smokesignals": "^3.0.4",
+    "trails": "^3.2.1"
   },
   "scripts": {
     "test": "eslint . && mocha"
