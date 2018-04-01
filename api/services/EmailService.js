@@ -1,6 +1,6 @@
 'use strict'
 
-const Service = require('trails/lib/Service')
+const Service = require('trails/Service')
 const _ = require('lodash')
 
 /**
